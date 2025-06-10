@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorePass - AI-Powered Health & Vaccination Management</title>
+    <meta name="description" content="CorePass is an intelligent iOS app that manages your vaccination records with AI-powered health insights using Apple's Foundation Models.">
+    <meta name="keywords" content="vaccination, health records, AI health, iOS app, Apple Intelligence, health management">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="CorePass - AI-Powered Health Management">
+    <meta property="og:description" content="Manage your vaccination records with AI-powered insights">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://corepass.health">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>CorePass</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Your Health Records, <span class="gradient-text">AI-Enhanced</span></h1>
+                <p class="hero-subtitle">CorePass uses Apple's Foundation Models to provide intelligent insights about your vaccination history, helping you make informed health decisions.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        <i class="fab fa-apple"></i>
+                        Download for iOS
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToDemo()">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-brain"></i>
+                        <span>Apple Intelligence</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-lock"></i>
+                        <span>Privacy First</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>iOS Native</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="status-bar"></div>
+                            <div class="app-header">
+                                <h3>CorePass</h3>
+                                <div class="ai-indicator">
+                                    <div class="ai-pulse"></div>
+                                    <span>AI Active</span>
+                                </div>
+                            </div>
+                            <div class="health-summary">
+                                <div class="summary-card">
+                                    <div class="card-icon">🛡️</div>
+                                    <div class="card-content">
+                                        <h4>Excellent Coverage</h4>
+                                        <p>5 vaccinations on record</p>
+                                    </div>
+                                </div>
+                                <div class="insight-pill">
+                                    <i class="fas fa-sparkles"></i>
+                                    <span>AI Insights Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Intelligent Health Management</h2>
+                <p>CorePass combines secure record keeping with AI-powered insights to help you understand and manage your health better.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Insights</h3>
+                    <p>Get personalized health recommendations using Apple's on-device Foundation Models. Your data never leaves your device.</p>
+                    <ul>
+                        <li>Vaccination coverage analysis</li>
+                        <li>Risk assessment reports</li>
+                        <li>Personalized recommendations</li>
+                        <li>Interactive health chat</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Record Management</h3>
+                    <p>Store and organize your vaccination records with military-grade security and easy access when you need them.</p>
+                    <ul>
+                        <li>End-to-end encryption</li>
+                        <li>QR code scanning</li>
+                        <li>Photo record capture</li>
+                        <li>Verification tracking</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Health Assistant Chat</h3>
+                    <p>Ask questions about your health records and get instant, contextual answers powered by AI that understands your data.</p>
+                    <ul>
+                        <li>Natural language queries</li>
+                        <li>Context-aware responses</li>
+                        <li>Travel health advice</li>
+                        <li>Vaccination scheduling</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Travel Ready</h3>
+                    <p>Get travel-specific health insights and ensure you're prepared for international requirements.</p>
+                    <ul>
+                        <li>Country-specific requirements</li>
+                        <li>Missing vaccination alerts</li>
+                        <li>Travel health timeline</li>
+                        <li>Emergency access features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>See CorePass in Action</h2>
+                <p>Watch how CorePass transforms your health data into actionable insights</p>
+            </div>
+            
+            <div class="demo-container">
+                <div class="video-placeholder">
+                    <div class="video-overlay">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3>App Demo Video</h3>
+                        <p>See real AI insights in action</p>
+                    </div>
+                </div>
+                
+                <div class="demo-features">
+                    <div class="demo-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Add Your Records</h4>
+                            <p>Scan QR codes or upload photos of your vaccination cards</p>
+                        </div>
+                    </div>
+                    <div class="demo-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Get AI Insights</h4>
+                            <p>Receive personalized health analysis and recommendations</p>
+                        </div>
+                    </div>
+                    <div class="demo-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Chat with AI</h4>
+                            <p>Ask questions and get instant, contextual health advice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy">
+        <div class="container">
+            <div class="privacy-content">
+                <div class="privacy-text">
+                    <h2>Privacy by Design</h2>
+                    <p>Your health data is extremely sensitive. That's why CorePass is built with privacy as the foundation, not an afterthought.</p>
+                    
+                    <div class="privacy-features">
+                        <div class="privacy-item">
+                            <i class="fas fa-microchip"></i>
+                            <div>
+                                <h4>On-Device AI Processing</h4>
+                                <p>All AI analysis happens locally on your device using Apple's Foundation Models. Your data never leaves your iPhone.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="privacy-item">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h4>End-to-End Encryption</h4>
+                                <p>Your health records are encrypted with industry-standard security. Only you can access your data.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="privacy-item">
+                            <i class="fas fa-user-shield"></i>
+                            <div>
+                                <h4>No Data Collection</h4>
+                                <p>We don't collect, store, or share your personal health information. Your privacy is guaranteed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="privacy-visual">
+                    <div class="security-shield">
+                        <div class="shield-layers">
+                            <div class="layer layer-1"></div>
+                            <div class="layer layer-2"></div>
+                            <div class="layer layer-3"></div>
+                            <div class="shield-center">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="security-labels">
+                            <div class="label label-1">Encryption</div>
+                            <div class="label label-2">On-Device AI</div>
+                            <div class="label label-3">No Tracking</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Ready to Take Control of Your Health?</h2>
+                <p>Join thousands of users who trust CorePass to manage their health records with AI-powered insights.</p>
+                
+                <div class="download-buttons">
+                    <button class="btn-download">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <span class="btn-sub">Download on the</span>
+                            <span class="btn-main">App Store</span>
+                        </div>
+                    </button>
+                    
+                    <div class="requirements">
+                        <h4>Requirements</h4>
+                        <ul>
+                            <li>iOS 18.1 or later</li>
+                            <li>Apple Intelligence enabled</li>
+                            <li>iPhone 15 Pro or newer (recommended)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="beta-notice">
+                    <i class="fas fa-flask"></i>
+                    <div>
+                        <h4>Beta Version</h4>
+                        <p>CorePass is currently in beta. Contact us for TestFlight access.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>CorePass</span>
+                    </div>
+                    <p>AI-powered health management for the modern world.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Privacy</h4>
+                        <ul>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#privacy">Security</a></li>
+                            <li><a href="#privacy">Data Protection</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:hello@corepass.health">Support</a></li>
+                            <li><a href="mailto:zechen@corepass.health">Developer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 CorePass. Made with ❤️ for better health management.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
