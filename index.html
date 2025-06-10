@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CorePass - AI-Powered Health & Vaccination Management</title>
-    <meta name="description" content="CorePass is an intelligent iOS app that manages your vaccination records with AI-powered health insights using Apple's Foundation Models.">
+    <title>KitPass - AI-Powered Health & Vaccination Management</title>
+    <meta name="description" content="KitPass is an intelligent iOS app that manages your vaccination records with AI-powered health insights using Apple's Foundation Models.">
     <meta name="keywords" content="vaccination, health records, AI health, iOS app, Apple Intelligence, health management">
     
     <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="CorePass - AI-Powered Health Management">
+    <meta property="og:title" content="KitPass - AI-Powered Health Management">
     <meta property="og:description" content="Manage your vaccination records with AI-powered insights">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://corepass.health">
+    <meta property="og:url" content="https://kitpass.health">
+    <meta property="og:image" content="app-icon.png">
     
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <link rel="apple-touch-icon" href="app-icon.png">
+    <link rel="shortcut icon" href="app-icon.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,8 +26,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-shield-alt"></i>
-                <span>CorePass</span>
+                <img src="app-icon.png" alt="KitPass" class="logo-icon">
+                <span>KitPass</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#features">Features</a></li>
@@ -43,8 +47,9 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Your Health Records, <span class="gradient-text">AI-Enhanced</span></h1>
-                <p class="hero-subtitle">CorePass uses Apple's Foundation Models to provide intelligent insights about your vaccination history, helping you make informed health decisions.</p>
+                <h1>Transform Your Health Journey with <span class="gradient-text">Apple HealthKit & Foundation Models</span></h1>
+                <h2 class="launch-text">Coming Fall 2025 with iOS 26</h2>
+                <p class="hero-subtitle">KitPass uses Apple's Foundation Models to provide intelligent insights about your current health status, and create the right documentation that help you travel with ease.</p>
                 <div class="hero-buttons">
                     <button class="btn-primary">
                         <i class="fab fa-apple"></i>
@@ -66,33 +71,126 @@
                     </div>
                     <div class="badge">
                         <i class="fas fa-mobile-alt"></i>
-                        <span>iOS Native</span>
+                        <span>iOS 26 Native/15 pro or newer devices</span>
                     </div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="phone-mockup">
+                <div class="phone-mockup iphone-16-pro">
                     <div class="phone-screen">
                         <div class="app-interface">
-                            <div class="status-bar"></div>
-                            <div class="app-header">
-                                <h3>CorePass</h3>
-                                <div class="ai-indicator">
-                                    <div class="ai-pulse"></div>
-                                    <span>AI Active</span>
+                            <div class="status-bar">
+                                <div class="status-left">
+                                    <span class="time">18:24</span>
+                                </div>
+                                <div class="status-right">
+                                    <div class="signal-bars">
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <div class="wifi-icon">📶</div>
+                                    <div class="battery">84%</div>
                                 </div>
                             </div>
-                            <div class="health-summary">
-                                <div class="summary-card">
-                                    <div class="card-icon">🛡️</div>
-                                    <div class="card-content">
-                                        <h4>Excellent Coverage</h4>
-                                        <p>5 vaccinations on record</p>
+                            
+                            <div class="app-content">
+                                <div class="app-title">
+                                    <h1>Travel Passport</h1>
+                                </div>
+                                
+                                <div class="travel-status">
+                                    <h2>Ready to Travel?</h2>
+                                    <p>Apple Intelligence with on device<br>LLM with privacy in mind</p>
+                                    <div class="verified-badge">
+                                        <span class="check-mark">✓</span>
+                                        <div class="verified-text">
+                                            <span>Verified</span>
+                                            <span class="timestamp">18:24</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="insight-pill">
-                                    <i class="fas fa-sparkles"></i>
-                                    <span>AI Insights Available</span>
+                                
+                                <div class="stats-grid">
+                                    <div class="stat-card">
+                                        <div class="stat-icon blue">🔒</div>
+                                        <div class="stat-number">2</div>
+                                        <div class="stat-label">Vaccinations</div>
+                                        <div class="stat-sublabel">Travel-ready vaccines</div>
+                                    </div>
+                                    <div class="stat-card">
+                                        <div class="stat-icon green">🗓️</div>
+                                        <div class="stat-number">2</div>
+                                        <div class="stat-label">Recent</div>
+                                        <div class="stat-sublabel">This year</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="ai-section">
+                                    <div class="ai-header">
+                                        <div class="ai-icon">🧠</div>
+                                        <span>AI Health Insights</span>
+                                        <div class="ai-tabs">
+                                            <span class="tab active">Chat</span>
+                                            <span class="tab">Insights</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ai-assistant">
+                                        <div class="assistant-item">
+                                            <div class="assistant-icon">🧠</div>
+                                            <div class="assistant-content">
+                                                <h4>AI Health Assistant</h4>
+                                                <p>Get personalized insights about your vaccination records</p>
+                                            </div>
+                                            <div class="chevron">›</div>
+                                        </div>
+                                        <div class="apple-intelligence">
+                                            <div class="ai-status">🧠 Apple Intelligence</div>
+                                            <div class="status-indicator">
+                                                <span class="dot green"></span>
+                                                <span>Available</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recent-section">
+                                    <div class="section-header">
+                                        <div class="section-title">
+                                            <span class="vaccine-icon">💉</span>
+                                            <span>Recent Vaccinations</span>
+                                        </div>
+                                        <span class="view-all">View All</span>
+                                    </div>
+                                    
+                                    <div class="vaccination-card">
+                                        <div class="vaccine-icon-bg purple">
+                                            <span class="thermometer">🌡️</span>
+                                        </div>
+                                        <div class="vaccine-info">
+                                            <h4>Influenza Vaccine, Trivalent, Preservative Fr...</h4>
+                                            <div class="vaccine-meta">
+                                                <span class="date">📅 Jun 9, 2025</span>
+                                                <span class="verified">✓ Verified</span>
+                                            </div>
+                                            <div class="manufacturer">GlaxoSmithKline</div>
+                                        </div>
+                                        <div class="expand-icon">⌄</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-bar">
+                                <div class="tab-item active">
+                                    <div class="tab-icon">🏠</div>
+                                    <span>Home</span>
+                                </div>
+                                <div class="tab-item">
+                                    <div class="tab-icon">📄</div>
+                                    <span>Records</span>
+                                </div>
+                                <div class="tab-item">
+                                    <div class="tab-icon">⚙️</div>
+                                    <span>Settings</span>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +205,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Intelligent Health Management</h2>
-                <p>CorePass combines secure record keeping with AI-powered insights to help you understand and manage your health better.</p>
+                <p>KitPass combines secure record keeping with AI-powered insights to help you understand and manage your health better.</p>
             </div>
             
             <div class="features-grid">
@@ -116,7 +214,7 @@
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3>AI-Powered Insights</h3>
-                    <p>Get personalized health recommendations using Apple's on-device Foundation Models. Your data never leaves your device.</p>
+                    <p>Get personalized travel recommendations using Apple's on-device Foundation Models. Your data never leaves your device.</p>
                     <ul>
                         <li>Vaccination coverage analysis</li>
                         <li>Risk assessment reports</li>
@@ -133,8 +231,6 @@
                     <p>Store and organize your vaccination records with military-grade security and easy access when you need them.</p>
                     <ul>
                         <li>End-to-end encryption</li>
-                        <li>QR code scanning</li>
-                        <li>Photo record capture</li>
                         <li>Verification tracking</li>
                     </ul>
                 </div>
@@ -174,8 +270,8 @@
     <section id="demo" class="demo">
         <div class="container">
             <div class="section-header">
-                <h2>See CorePass in Action</h2>
-                <p>Watch how CorePass transforms your health data into actionable insights</p>
+                <h2>See KitPass in Action</h2>
+                <p>Watch how KitPass transforms your health data into actionable insights</p>
             </div>
             
             <div class="demo-container">
@@ -194,21 +290,21 @@
                         <div class="step-number">1</div>
                         <div class="step-content">
                             <h4>Add Your Records</h4>
-                            <p>Scan QR codes or upload photos of your vaccination cards</p>
+                            <p>Through Apple healthkit, you can add your records to the app</p>
                         </div>
                     </div>
                     <div class="demo-step">
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <h4>Get AI Insights</h4>
-                            <p>Receive personalized health analysis and recommendations</p>
+                            <p>Receive personalized travel document recommendations</p>
                         </div>
                     </div>
                     <div class="demo-step">
                         <div class="step-number">3</div>
                         <div class="step-content">
                             <h4>Chat with AI</h4>
-                            <p>Ask questions and get instant, contextual health advice</p>
+                            <p>Ask questions and get instant, contextual travel advice on right documentation</p>
                         </div>
                     </div>
                 </div>
@@ -222,7 +318,7 @@
             <div class="privacy-content">
                 <div class="privacy-text">
                     <h2>Privacy by Design</h2>
-                    <p>Your health data is extremely sensitive. That's why CorePass is built with privacy as the foundation, not an afterthought.</p>
+                    <p>Your health data is extremely sensitive. That's why KitPass is built with privacy as the foundation, not an afterthought.</p>
                     
                     <div class="privacy-features">
                         <div class="privacy-item">
@@ -276,8 +372,8 @@
     <section id="download" class="download">
         <div class="container">
             <div class="download-content">
-                <h2>Ready to Take Control of Your Health?</h2>
-                <p>Join thousands of users who trust CorePass to manage their health records with AI-powered insights.</p>
+                <h2>Ready to Travel with Ease?</h2>
+                <p>Join the waitlist to be the first to experience KitPass</p>
                 
                 <div class="download-buttons">
                     <button class="btn-download">
@@ -291,9 +387,9 @@
                     <div class="requirements">
                         <h4>Requirements</h4>
                         <ul>
-                            <li>iOS 18.1 or later</li>
+                            <li>iOS 26 or later</li>
                             <li>Apple Intelligence enabled</li>
-                            <li>iPhone 15 Pro or newer (recommended)</li>
+                            <li>iPhone 15 Pro or newer </li>
                         </ul>
                     </div>
                 </div>
@@ -302,7 +398,7 @@
                     <i class="fas fa-flask"></i>
                     <div>
                         <h4>Beta Version</h4>
-                        <p>CorePass is currently in beta. Contact us for TestFlight access.</p>
+                        <p>KitPass is currently in beta. Contact us for TestFlight access.</p>
                     </div>
                 </div>
             </div>
@@ -314,10 +410,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>CorePass</span>
-                    </div>
+                                    <div class="footer-logo">
+                    <img src="app-icon.png" alt="KitPass" class="logo-icon">
+                    <span>KitPass</span>
+                </div>
                     <p>AI-powered health management for the modern world.</p>
                 </div>
                 
@@ -343,15 +439,15 @@
                     <div class="footer-column">
                         <h4>Contact</h4>
                         <ul>
-                            <li><a href="mailto:hello@corepass.health">Support</a></li>
-                            <li><a href="mailto:zechen@corepass.health">Developer</a></li>
+                                                                            <li><a href="mailto:zy3398@nyu.edu">Support</a></li>
+                        <li><a href="mailto:zy3398@nyu.edu">Developer: Zechen Yang</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 CorePass. Made with ❤️ for better health management.</p>
+                <p>&copy; 2025 KitPass. Made with ❤️ for better health management.</p>
             </div>
         </div>
     </footer>

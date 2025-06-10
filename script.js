@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (videoPlaceholder) {
         videoPlaceholder.addEventListener('click', function() {
             // In a real implementation, this would open a video modal or navigate to a video
-            alert('Demo video would play here! \n\nFor now, you can record your iPhone usage and share the video file with me to create an interactive demo.');
+            alert('Demo video would play here! \n\n');
         });
     }
     
