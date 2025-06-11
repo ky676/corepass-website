@@ -884,110 +884,115 @@ body {
     font-weight: bold;
 }
 
-/* Demo Section */
-.demo {
+/* App Gallery Section */
+.app-gallery {
     padding: var(--spacing-2xl) 0;
     background: var(--surface);
 }
 
-.demo-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.gallery-container {
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-2xl);
-    align-items: start;
 }
 
-.video-placeholder {
-    background: #000;
-    border-radius: var(--border-radius-lg);
-    aspect-ratio: 16/9;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.video-placeholder:hover {
-    transform: scale(1.02);
-}
-
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.8), rgba(88, 86, 214, 0.8));
-    display: flex;
-    flex-direction: column;
+.gallery-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
     align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+    padding: var(--spacing-xl) 0;
 }
 
-.play-button {
-    width: 80px;
-    height: 80px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: var(--spacing-md);
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
+.gallery-section.reverse {
+    direction: rtl;
 }
 
-.play-button:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
+.gallery-section.reverse > * {
+    direction: ltr;
 }
 
-.play-button i {
+.gallery-text h3 {
     font-size: 2rem;
-    margin-left: 5px;
-}
-
-.video-overlay h3 {
-    font-size: 1.5rem;
-    margin-bottom: var(--spacing-xs);
-}
-
-.demo-features {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-lg);
-}
-
-.demo-step {
-    display: flex;
-    gap: var(--spacing-md);
-    align-items: flex-start;
-}
-
-.step-number {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 600;
-    flex-shrink: 0;
-}
-
-.step-content h4 {
-    font-size: 1.2rem;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
     color: var(--text-primary);
 }
 
-.step-content p {
+.gallery-text p {
+    font-size: 1.1rem;
     color: var(--text-secondary);
     line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+}
+
+.gallery-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-text li {
+    padding: var(--spacing-xs) 0;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: var(--spacing-lg);
+}
+
+.gallery-text li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-md);
+    height: 500px;
+}
+
+.gallery-image {
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-image.main {
+    grid-row: 1 / -1;
+}
+
+.gallery-image.secondary {
+    align-self: center;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 /* Privacy Section */
@@ -1399,9 +1404,26 @@ body {
         display: flex;
     }
     
-    .demo-container {
+    .gallery-section {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .gallery-section.reverse {
+        direction: ltr;
+    }
+    
+    .gallery-images {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: var(--spacing-md);
+    }
+    
+    .gallery-image.main,
+    .gallery-image.secondary {
+        grid-row: auto;
+        height: 300px;
     }
     
     .privacy-content {
