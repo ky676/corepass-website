@@ -1485,6 +1485,181 @@ body {
         transform: perspective(800px) rotateY(-2deg) rotateX(2deg);
     }
     
+    /* Mobile app interface adjustments */
+    .app-content {
+        padding: 0 12px;
+    }
+    
+    .app-title h1 {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+    
+    .travel-status h2 {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+    
+    .travel-status p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .verified-badge {
+        margin-bottom: 15px;
+    }
+    
+    .check-mark {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+    
+    .verified-text span:first-child {
+        font-size: 12px;
+    }
+    
+    .timestamp {
+        font-size: 11px;
+    }
+    
+    .stats-grid {
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .stat-card {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .stat-icon {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    
+    .stat-number {
+        font-size: 20px;
+        margin-bottom: 1px;
+    }
+    
+    .stat-label {
+        font-size: 11px;
+    }
+    
+    .stat-sublabel {
+        font-size: 10px;
+    }
+    
+    .ai-section {
+        margin-bottom: 15px;
+    }
+    
+    .ai-header {
+        margin-bottom: 8px;
+    }
+    
+    .ai-header .ai-icon {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+    
+    .tab {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+    
+    .ai-assistant {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .assistant-item {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .assistant-icon {
+        font-size: 14px;
+    }
+    
+    .assistant-content h4 {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    
+    .assistant-content p {
+        font-size: 10px;
+    }
+    
+    .chevron {
+        font-size: 12px;
+    }
+    
+    .apple-intelligence {
+        padding-top: 8px;
+    }
+    
+    .ai-status {
+        font-size: 10px;
+    }
+    
+    .recent-section {
+        margin-bottom: 15px;
+    }
+    
+    .section-title span {
+        font-size: 12px;
+    }
+    
+    .view-all {
+        font-size: 11px;
+    }
+    
+    .vaccination-card {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .vaccine-icon-bg {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .vaccine-info h4 {
+        font-size: 11px;
+        margin-bottom: 3px;
+    }
+    
+    .vaccine-meta {
+        margin-bottom: 2px;
+    }
+    
+    .date, .verified {
+        font-size: 9px;
+    }
+    
+    .manufacturer {
+        font-size: 9px;
+    }
+    
+    .tab-bar {
+        padding: 8px 15px 12px;
+    }
+    
+    .tab-item {
+        gap: 3px;
+    }
+    
+    .tab-icon {
+        font-size: 16px;
+    }
+    
+    .tab-item span {
+        font-size: 9px;
+    }
+    
     .features-grid {
         grid-template-columns: 1fr;
     }
